@@ -1,1 +1,1 @@
-# Ejs-restaurant-assignment
+# Ejs-assignment
