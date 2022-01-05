@@ -6,6 +6,8 @@ async function fetchData(url){
     const response = await fetch(apiUrl)
     const data = await response.json()
     console.log(data)
+    
+    getItems(data)
 }
 
 const list = document.querySelector(".reviews")
