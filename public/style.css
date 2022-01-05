@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+
+}
+/*Main Showcase Styling */
+
+#showcase{
+    background-image: url(images/restaurant.jpg);
+    min-height: 1150px; 
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+/*Styling Showcase Navigation*/
+
+header{
+display: flex;
+position: fixed;
+justify-content: space-between;
+width: 100%;
+background-color: #252830;
+align-items: center;
+top: 0;
+left: 0;
+transition: 0.6s;
+}
+
+header.sticky{
+    padding:20px 80px;
+    background-color: #252830 ;
+    
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.nav-ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.nav-ul li a:hover{
+    color: rgb(0, 128, 255);
+}
+
+.nav-ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: red;
+    margin-top: 1rem;
+    padding-left: 2rem;
+}
+
+.logo img{
+    width: 8rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+/** styling the hamburger menu**/
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+
+#showcase h6{
+    font-size: 3.2rem;
+    color: #fff;
+    margin-top: 12rem;
+    margin-left: 6rem;
+    font-weight: normal;
+}
+
+#showcase h1{
+    font-size: 8rem;
+    color: #fff;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    width: 40rem;
+    font-weight: bolder;
+    
+}
+
+/* Styling Cards with Images */
+.main-cards{
+ display: flex;
+ justify-content: center;
+ gap: 1.7em;
+ margin-top: 8rem;
+    
+}
+
+.card-inner{
+    width: 15rem;
+    height:19rem;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+.card-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-text h4{
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    text-align: center;
+    font-weight: normal;
+}
+.card-text h2{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+} 
+
+/**Styling Section1 **/
+
+#container2{
+    width: 80%;
+    margin: auto;
+}
+
+.section1{
+    min-height: 90vh;
+    background-color: rgba(240, 240, 240, 0.959);
+    width: 100%;
+}
+
+.section1 h6{
+    font-size: 3.2rem;
+    text-align: center;
+    color: rgb(74, 74, 74);
+    padding-top: 9rem;
+    font-weight: normal;
+}
+
+.section1 p{
+    font-size: 1.1rem;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5rem;  
+    color: rgb(121, 121, 121);
+    width: 650px;
+    padding-top: 4rem;
+}
+
+.section1 img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+/**Styling Section2 **/
+#showcase1{
+    background-image: url(images/checked_menu.jpg);
+    min-height: 700px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: block;  
+    position: relative;
+}
+
+.eaten1{
+    margin-bottom: 6em;
+    height: 40%;
+    width:80%;
+    padding-top:10%;  
+    padding-left: 8%; 
+}
+
+#showcase1 h6{
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.897);
+    font-weight: normal;
+}
+#showcase1 h1{
+    font-size: 4.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+#showcase1 p{   
+    font-size: 1rem;
+    color: rgb(166, 166, 166);
+    padding-top: 10%;
+}
+
+#showcase1 button{
+    padding: 1.5rem 1rem;
+    margin-top: 4rem;
+    margin-left: 7rem;
+    color: white;
+    background-color: rgba(228, 135, 41, 0.822);
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+#showcase1 i{
+    font-size: 2rem;
+    color: white;
+}
+
+#showcase1 h5{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: white;
+    font-weight: normal;
+    
+}
+
+#showcase1 button{
+    display: flex;
+}
+
+#showcase1 button:hover{
+    color: white;
+    background-color: rgb(236, 183, 0);
+}
+
+/* stylig the modal*/
+#modal{
+    height: 400px;
+    width: 350px;
+    max-width: 80%;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(119, 73, 49, 0.5);
+    position: absolute;
+    left: 66%;
+    margin-top: -450px;
+    box-shadow: 5px 8px 2px 8px transparent;
+    transition: transform 2s;
+    animation: fadeInAnimation ease-in 0.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+    
+
+
+}
+
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
+/*@keyframes fadeOutAnimation{
+    0%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity:0;
+    }
+}*/
+
+#modal:hover{
+    transform: scale(1.3);
+}
+
+#modal h4{
+    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-left: 15px;
+
+}
+#modal span{
+    color: black;
+    font-family: bold;
+    font-size: 1.4rem ;
+}
+
+
+
+.modal-header{
+    padding: 15px 20px;
+    display:flex;
+    background-color: rgba(255, 154, 53, 0.822);
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid black;
+
+}
+
+.modal-header h3{
+    font-size: 1.5rem;
+
+}
+
+.modal-header #close{
+ cursor: pointer;
+ border: none;
+ outline: none;
+ background: none;
+ font-size: 2rem;
+ font-weight: bold;
+}
+
+
+
+
+/**Styling Section3**/
+.section3{
+    min-height: 70vh;
+    background-color: rgb(230, 230, 230);
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.main-grid{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    grid-gap: 50px;
+    
+}
+
+
+.section3 h6{
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(25, 25, 25);
+    font-size: 1.6rem;
+    text-align: center;
+   
+}
+
+.section3 img{
+    height: 200px;
+    width: 200px;
+    margin-left: 2rem;
+    
+}
+
+.section3 p{
+    width: 300px;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: rgb(121, 121, 121);
+    text-align: center;  
+}
+
+/**Styling Section4 **/
+.showcase3{
+    background-image: url(images/bg21.jpg);
+    min-height: 80vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    text-align: center;
+}
+
+.showcase3 i{
+    font-size: 2rem;
+    color: rgb(255, 155, 53);
+    margin-top: 8rem;
+}
+
+
+.showcase3 p{
+    color: #fff;
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.showcase3 small{
+    color: grey;
+    font-size: 1rem;
+
+}
+
+/**Styling Section4**/
+
+.showcase4{
+    min-height: 75vh; 
+    width: 100%;
+    background-image: url(images/bg5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+   
+}
+
+.main-grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 100px;
+
+}
+
+.showcase4 i{
+    color: rgb(181, 181, 181);
+    font-size: 4rem;
+    margin-left: 2rem;
+    
+}
+
+.showcase4 h6{
+    color: black;
+    font-size: 4.5rem;
+    font-weight: normal;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.showcase4 small{
+    color: black;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 2rem;
+}
+
+/**Styling Section5**/
+.showcase5{
+    background-image: url(images/blackwood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+      
+}
+
+.inner-wrap{
+    width: 85%;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    
+      
+}
+
+
+.showcase5 h6{
+    font-size: 3rem;
+    padding-top: 9rem;
+    color: white;
+   font-weight: normal;
+   padding-bottom: 5rem; 
+
+}
+.input-text {
+    display: inline;
+    width: 100%;
+    height: 4rem;
+    border-top: 0.8px solid grey;
+    border-bottom: 0.8px solid grey;
+    background: transparent;
+    font-size: 1rem;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+.form-mail {
+    display: inline;
+    width: 100%;
+    height: 4rem;
+    background: transparent;
+    font-size: 1rem;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+
+.form-message{
+    display: inline;
+    width: 100%;
+    height: 9rem;
+    border-top: none;
+    border-bottom: 0.8px solid grey;
+    background: transparent;
+    font-size: 1rem;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+
+.showcase5 button{
+    padding: 1.3rem 2rem;
+    width: 100%;
+    margin-top: 3rem;
+    color: white;
+    background-color: rgb(255, 155, 53);
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+.showcase5 .left-button{
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 0.6rem;
+    
+}
+
+.showcase5 h5{
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    color: white;
+    font-weight: normal; 
+    margin-left: 0.5rem ; 
+}
+
+button .buton{
+    display: flex;
+    justify-content: center;
+
+}
+
+.showcase5 button:hover{
+    color: white;
+    background-color: rgb(236, 183, 0);
+    transition: 0.35s ease-in-out;
+}
+
+.showcase5 p{
+    width: 50%;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 3rem ;
+}
+
+.showcase5 .heart{
+    font-size: 1.5rem;
+    color: rgb(166, 166, 166);
+    
+}
+
+.showcase5 span{
+    font-size: 1rem;
+    color:white;
+    font-weight: normal;
+    margin-left: 2rem;
+}
+
+.showcase5 .span{
+    padding-bottom: 2rem ;
+}
+
+
+/*about us styling*/
+/*
+.content-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+}
+
+.content-section img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    
+}
+
+.section button{
+    padding: 1.2rem 1.7rem;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(228, 135, 41, 0.822);
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    
+}
+
+.content-section h1{
+    font-size: 3rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.section .container{
+    width: 80%;
+    margin: auto;
+}
+
+.content-section p{
+    width: 500px;
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}*/
+
+
+
+
+/*styling comment section*/
+/*.comment-card{
+    margin-top: 10rem;
+}
+.comment-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+
+}
+.comment-card h1{
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.comment-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    padding: 1rem;
+    border: 2px solid aqua;
+
+}
+
+.comment-btn{
+    padding: 1.2rem 1.7rem;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(228, 135, 41, 0.822);
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    margin-bottom: 2rem;}*/
+
+
+
+
+/**Styling Footer**/
+footer{
+    min-height: 270px;
+    background-color: #252830;
+    color: white;
+}
+
+.mini-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+
+
+footer img{
+    margin-top: 5rem;
+}
+
+.flex4{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 8rem;
+}
+
+    
+footer p{
+    font-size: 1rem;
+    padding-top: 5rem;   
+    padding-left: 1.5rem;
+}
+
+footer h6{
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+footer i{
+    color: rgb(166, 166, 166);
+    font-size: 1.5rem;
+}
+
+.social{
+    margin-right: 8rem;
+    margin-top: 6rem;
+}
+
+.social a{
+    margin-left: 1.5rem;
+}
+
+i:hover{
+    color: white;
+}
+
+
+#container{
+    width: 80%;
+    margin: auto;
+    overflow:hidden ;
+}

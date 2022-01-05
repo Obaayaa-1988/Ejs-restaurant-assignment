@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+    <%- include('./partials/head.ejs') %>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+    <div class="contact-section">
+        <h1>Contact Us</h1>
+
+        <form class="contact-form" action="/contact" method="post">
+            <input type="text" class="form-text" name="name" placeholder="your name......" required>
+            <textarea name="message" class="form-text" placeholder="your comment please......"  required></textarea>
+            
+            <button type="submit" value="Submit" class="form-btn">Submit</button>
+
+        </form>
+
+
+    </div>
+
+
+    
+
+
+        <%- include('./partials/footer.ejs') %>
+<script src="script.js"></script>
+
+</body>
+
+</html>
